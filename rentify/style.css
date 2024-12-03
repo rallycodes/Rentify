@@ -1,0 +1,591 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+html,
+body {
+  overflow-x: hidden;
+  background-image: url("jason-briscoe-pAqfQye5hlw-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #0a0417eb;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+  box-sizing: border-box;
+  padding: 5px 0px;
+}
+.logo {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+.logo h3 {
+  font-size: 30px;
+  color: white;
+  box-sizing: border-box;
+  margin: 0;
+  padding-bottom: 6px;
+  margin-left: 1rem;
+  font-family: "Baskervville SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.links a {
+  font-size: 17px;
+  margin: 0rem 1rem;
+  color: white;
+  text-decoration: none;
+  padding: 0;
+}
+
+.links a:hover {
+  color: #ffc107;
+}
+
+.money {
+  padding-left: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.money a {
+  color: white;
+  padding-left: 1rem;
+  font-size: 18px;
+}
+.money a:hover {
+  color: rgb(88, 88, 97);
+}
+.linksandbuttons {
+  margin-left: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+}
+.loginsign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.loginsign button {
+  font-size: 15px;
+  margin: 0px 10px;
+  color: #fff6f6;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.loginsign .login {
+  width: 60px;
+  height: 30px;
+  background-color: #65452000;
+}
+.sign {
+  width: 160px;
+  height: 40px;
+  background-color: #654520;
+  border-radius: 5px;
+  margin-right: 0rem;
+}
+.loginsign .sign:hover {
+  background-color: #ffc107;
+  color: white;
+  border: 1px solid #ffc107;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.loginsign .login:hover {
+  color: #ffc107;
+  transform: scale(1.1);
+}
+.mainpage {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 100px;
+}
+.mainpage input {
+  max-width: 30rem;
+  scale: 1.8;
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 0.6rem 1rem;
+  border: 2px solid #e09615;
+  box-shadow: rgba(167, 107, 107, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 20px;
+  margin: 20px 0;
+  z-index: 1;
+  font-size: 13px;
+  padding-left: 1rem;
+}
+.searchimg {
+  position: absolute;
+  left: 230px;
+  top: 30px;
+  width: 20px;
+  height: 20px;
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+  scale: 1.2;
+}
+
+.mainpage h1 {
+  color: #fffc07;
+  font-size: 4rem;
+  margin: 60px auto;
+  margin-top: -60px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.listingpage {
+  background-color: #ece5d5;
+  min-height: 100vh;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 70px;
+}
+.nlist1,
+.nlist2 {
+  margin-top: 40px;
+  padding-left: 110px;
+}
+.nlist1 a,
+.nlist2 a {
+  color: black;
+  margin: 0;
+}
+.nlist1 a:hover {
+  color: rgb(88, 88, 97);
+}
+.nlist2 a:hover {
+  color: rgb(88, 88, 97);
+}
+
+.alllistnew,
+.singlefamily {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.alllistnew .block,
+.singlefamily .block {
+  max-width: 320px;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 20px;
+  max-width: 300px;
+  max-height: 60vh;
+  margin: 10px;
+  padding: 0;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  position: relative;
+}
+
+.alllistnew .block:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform: translateY(-5px);
+}
+.singlefamily .block:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform: translateY(-5px);
+}
+
+.alllistnew img,
+.singlefamily img {
+  background-repeat: none;
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  margin: 0;
+  border-radius: 10px 10px 0 0;
+}
+
+.favicon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ece5d5;
+  border: 1px solid black;
+  position: absolute; /* Absolute positioning */
+  top: 180px; /* Adjust this value as needed */
+  right: 15px; /* Adjust this value as needed */
+  padding: 0px;
+  margin: 0;
+  box-sizing: border-box;
+}
+.favicon i {
+  padding: 3px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 50%;
+  scale: 1.4;
+}
+.favicon:hover {
+  background-color: #cdc8bc;
+}
+.alllistnew .block p,
+.singlefamily .block p {
+  padding: 0 5px;
+}
+.alllistnew .block h1,
+.singlefamily .block h1 {
+  font-family: "Montserrat Bold", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 25px;
+  color: black;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+.alllistnew .block h1 .ay,
+.singlefamily .block h1 .ay {
+  font-size: 16px;
+  margin: 5px;
+  color: #272525;
+}
+.alllistnew .block h3 p,
+.singlefamily .block h3 p {
+  display: inline;
+  margin: 0;
+  font-size: 19px;
+  font-weight: 100;
+}
+.alllistnew .block h3,
+.singlefamily .block h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  font-weight: bolder;
+}
+.block .bilgi {
+  margin-top: 0;
+  padding: 30px 10px;
+}
+.block .bilgi .adress {
+  font-size: 14px;
+  color: #555353;
+  margin-top: 20px;
+  display: flex;
+}
+.findapartment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 80%;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 15px;
+}
+.findapartment img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  margin-left: 20px;
+}
+.findapartment p {
+  padding-left: 30px;
+}
+.findapartment a {
+  padding-left: 3px;
+  color: black;
+  font-weight: bold;
+}
+.findapartment a:hover {
+  color: rgb(88, 88, 97);
+}
+footer {
+  background-color: #412a10;
+  color: white;
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+.socialmedia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  margin-right: 140px;
+}
+.socialmedia i {
+  scale: 2;
+  padding: 20px 0px 0px 100px;
+  background-color: b;
+  color: #ece5d5;
+}
+.about {
+  display: flex;
+  justify-content: center;
+  color: #ece5d5;
+}
+.about div {
+  padding: 70px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about p {
+  display: flex;
+  padding: 10px;
+  font-size: 17px;
+  font-weight: bolder;
+}
+.about a {
+  display: flex;
+  flex-direction: column;
+  color: #ece5d5;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 15px;
+}
+.bn46 {
+  width: 150px;
+  height: 50px;
+}
+.bn45 {
+  width: 170px;
+  height: 50px;
+}
+.app {
+  padding-bottom: 30px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.app h1 {
+  display: block;
+}
+
+/* Responsive düzenlemeler */
+@media screen and (max-width: 1200px) {
+  .linksandbuttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .money {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0rem;
+  }
+
+  .loginsign {
+    margin: 0rem;
+  }
+}
+@media screen and (min-width: 999px) {
+  .menu-icon {
+    display: none;
+  }
+}
+@media screen and (max-width: 999px) {
+  .head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    height: 5rem;
+  }
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    margin-right: 30px;
+    z-index: 1000;
+    color: white;
+  }
+
+  .linksandbuttons {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 150px;
+    height: 100vh;
+    background-color: #0a0417eb;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    transition: right 0.3s ease-in-out;
+    z-index: 999;
+    overflow-y: scroll;
+  }
+
+  .linksandbuttons.open {
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  .links,
+  .money,
+  .loginsign {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    box-sizing: border-box;
+  }
+  .loginsign button {
+    margin: 2rem;
+    box-sizing: border-box;
+  }
+  .links a,
+  .money a {
+    margin: 0.5rem 1rem;
+    padding-top: 1.2rem;
+    font-size: 1.2rem;
+    color: white;
+  }
+  .linksandbuttons.open {
+    right: 0;
+  }
+
+  .mainpage h1 {
+    font-size: 3rem;
+  }
+
+  .searchbar img {
+    position: absolute;
+  }
+  .nlist1,
+  .nlist2 {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .alllistnew,
+  .singlefamily {
+    justify-content: center;
+  }
+
+  .block {
+    width: 90%;
+    max-width: none;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about div {
+    padding: 30px 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo h3 {
+    font-size: 2rem;
+  }
+
+  .mainpage h1 {
+    font-size: 2.5rem;
+  }
+
+  .searchbar {
+    scale: 0.8;
+  }
+
+  .nlist1,
+  .nlist2 {
+    padding-left: 20px;
+  }
+
+  .findapartment {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .findapartment img {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .findapartment p,
+  .findapartment a {
+    padding-left: 0;
+  }
+
+  .socialmedia {
+    margin-right: 0;
+  }
+
+  .socialmedia i {
+    padding: 20px 10px 0px 10px;
+    margin: 0 3px;
+    cursor: pointer;
+  }
+}
